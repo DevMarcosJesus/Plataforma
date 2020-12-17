@@ -8,7 +8,7 @@
 
 
 <img src="responder.JPG">
-<img src="index.JPG>
+<img src="index.JPG">
 
 > Bem este projeto é inspirado no Yahoo perguntas e respostas. Para fins acâdemicos.
 
