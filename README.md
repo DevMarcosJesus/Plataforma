@@ -39,7 +39,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://avatars0.githubusercontent.com/u/67200082?s=460&u=40065ed5b89e08bb839d3f07e23cf208ffb76303&v=4" width="100px;" alt="Foto de Marcos Jesus no GitHub"/><br>
+        <img src="https://avatars0.githubusercontent.com/u/67200082?s=460&u=40065ed5b89e08bb839d3f07e23cf208ffb76303&v=4" width="50px;" alt="Foto de Marcos Jesus no GitHub"/><br>
         <sub>
           <b>Marcos Jesus</b>
         </sub>
