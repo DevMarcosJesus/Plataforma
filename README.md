@@ -7,7 +7,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
 
 
-<img src="guia.png">
+<img src="img/guia.png">
 
 > Bem este projeto é inspirado no Yahoo perguntas e respostas. Para fins acâdemicos.
 
