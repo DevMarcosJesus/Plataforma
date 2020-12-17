@@ -29,6 +29,10 @@ app.get('/', (req, res) => {
 
 })
 
+app.get('/index', (req,res) => {
+    res.render('index')
+})
+
 app.get('/pergunta', (req, res) => {
     res.render('plataforma')
 })
@@ -39,9 +43,26 @@ app.post('/salvarpergunta', (req, res) => {
     Pergunta.create({
         titulo:titulo,
         descricao:descricao,
-    }).then(() => {res.redirect('/')})
+    }).then(() => {
+        res.redirect('/')
+    })
 })
 
+
+app.get('/pergunta/:id', (req, res) => {
+    let id = req.params.id;
+    Pergunta.findOne({
+        where: {id: id}
+    }).then(pergunta => {
+        if(pergunta != undefined){
+            res.render('pergunta',{
+                pergunta:pergunta,
+            })
+        }else{
+            res.render('/')
+        }
+    })
+})
 
 http.listen(8000, () => {
     console.log('Server online.')
