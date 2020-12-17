@@ -3,8 +3,8 @@
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/DevMarcosJesus/Plataforma?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/DevMarcosJesus/Plataforma?style=for-the-badge)
 
 
 
@@ -15,7 +15,7 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [x] npm install dependencias...
+- [x] Npm install dependencias...
 - [x] Configurar rotas.
 - [x] Fazer o front-end
 - [x] Criar o Banco de Dados
@@ -52,4 +52,4 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
 
-[⬆ Voltar ao topo](# Plataforma de Perguntas e Respostas)<br>
+[⬆ Voltar ao topo](#nome-do-projeto)<br>
