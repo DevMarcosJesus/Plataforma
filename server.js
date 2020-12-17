@@ -5,6 +5,7 @@ const io = require('socket.io');
 const db = require('./Controller/database')
 const bodyParser = require('body-parser')
 const Pergunta = require('./Controller/Pergunta')
+const Resposta = require('./Controller/Resposta')
 
 db.authenticate().then(() => {
     console.log('Connection Success Database')
@@ -62,6 +63,18 @@ app.get('/pergunta/:id', (req, res) => {
             res.render('/')
         }
     })
+})
+
+app.post('/responder', (req, res) => {
+    let corpo = req.body.corpo;
+    let perguntaId = req.body.pergunta;
+    Resposta.create({
+        corpo: corpo,
+        perguntaId:perguntaId,
+    }).then(() =>{
+        res.redirect(`/pergunta/${perguntaId}`)
+    })
+
 })
 
 http.listen(8000, () => {

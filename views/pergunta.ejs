@@ -8,9 +8,15 @@
     <div class="container">
         <hr>
         <h2><%= pergunta.titulo%></h2>
-        <h4><%= pergunta.descricao%></h4>
+        <p><%= pergunta.descricao%></p>
         <hr>
-
+        <form method="POST" action="/responder">
+            <h3>Responda</h3>
+            <label for="">Resposta:</label>
+            <textarea placeholder="Digite sua resposta..." class="form-control" name="corpo" cols="30" rows="7"></textarea><br>
+            <input type="hidden" name="pergunta" value="<%= pergunta.id%>">
+            <button type="submit" class="btn btn-primary">Responder</button>
+        </form>
 
     </div>
 </body>
