@@ -4,8 +4,10 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
 
-<img src="public\img\perguntas.png" alt="Imagem da página perguntas">
+
+<img src="guia.png">
 
 > Bem este projeto é inspirado no Yahoo perguntas e respostas. Para fins acâdemicos.
 
