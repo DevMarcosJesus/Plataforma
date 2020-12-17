@@ -7,7 +7,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/DevMarcosJesus/Plataforma?style=for-the-badge)
 
 
-
+<img src="index.JPG">
 
 > Bem este projeto é inspirado no Yahoo perguntas e respostas. Para fins acâdemicos.
 
@@ -15,13 +15,9 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [x] Npm install dependencias...
-- [x] Configurar rotas.
-- [x] Fazer o front-end
-- [x] Criar o Banco de Dados
-- [x] Adicionar funcionalidades a perguntas e respostas
+- [ ] Terminar o Front-end
 - [ ] Formulário de resposta
-- [ ] Exibição de respostas e finalização.
+- [ ] Exibição de respostas e finalizações.
 
 ## 💻 Pré-requisitos
 
