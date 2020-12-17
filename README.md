@@ -7,7 +7,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/DevMarcosJesus/Plataforma?style=for-the-badge)
 
 
-<img src="img/index.JPG">
+<img src="index.JPG">
 
 > Bem este projeto é inspirado no Yahoo perguntas e respostas. Para fins acâdemicos.
 
