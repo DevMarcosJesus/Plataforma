@@ -7,17 +7,27 @@ const bodyParser = require('body-parser')
 const Pergunta = require('./Controller/Pergunta')
 const Resposta = require('./Controller/Resposta')
 
+
+
+
+// Some essentials settings
+app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.json())
+app.use(express.static('public'))
+app.set('view engine', 'ejs')
+
+
+
+
+// Database connection
 db.authenticate().then(() => {
     console.log('Connection Success Database')
 }).catch((err) => {
     console.log(`${err}Not possible connection DB`)
 })
 
-app.use(bodyParser.urlencoded({extended: false}))
-app.use(bodyParser.json())
 
-app.use(express.static('public'))
-app.set('view engine', 'ejs')
+
 
 app.get('/', (req, res) => {
     Pergunta.findAll({raw: true, order:[
@@ -28,15 +38,21 @@ app.get('/', (req, res) => {
         })
     })
 
-})
+});
+
+
 
 app.get('/index', (req,res) => {
     res.render('index')
-})
+});
+
+
 
 app.get('/pergunta', (req, res) => {
     res.render('plataforma')
-})
+});
+
+
 
 app.post('/salvarpergunta', (req, res) => {
     let titulo = req.body.titulo;
@@ -47,7 +63,8 @@ app.post('/salvarpergunta', (req, res) => {
     }).then(() => {
         res.redirect('/')
     })
-})
+});
+
 
 
 app.get('/pergunta/:id', (req, res) => {
@@ -70,7 +87,9 @@ app.get('/pergunta/:id', (req, res) => {
             res.render('/')
         }
     })
-})
+});
+
+
 
 app.post('/responder', (req, res) => {
     let corpo = req.body.corpo;
@@ -82,8 +101,11 @@ app.post('/responder', (req, res) => {
         res.redirect(`/pergunta/${perguntaId}`)
     })
 
-})
+});
+
+
+
 
 http.listen(8000, () => {
     console.log('Server online.')
-})
+});
